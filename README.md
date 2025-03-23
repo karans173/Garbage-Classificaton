@@ -1,8 +1,16 @@
 # Garbage-Classificaton
 
-**Introduction**
+**About Project**
 
-This project aims to classify different types of household garbage into 12 distinct categories using machine learning techniques. The goal is to improve the recycling process by accurately sorting garbage into groups that share similar recycling processes.
+This kernel shows how to classify Garbage images into 12 different classes using transfer learning. I also created a webapp that can classify garbage images based on the model trained here.
+
+Transfer learning means that instead of your model learning everything from scratch, it uses another model that was trained on a similar problem, so that you can "transfer" the learned "knowledge" of the pretrained model to your model, and then learn some new features.
+
+The ImageNet Data set is huge data set consisting of more than 14 million images from more than 22,000 different categories, here we are using a smaller version of it which has 1000 different categories.
+
+In this kernel we use an xception model which is pretrained on the ImageNet dataset and then build some layers on top of it to be able to classify the garbage images.
+
+Transfer learning makes sense here because the ImageNet data set has a much larger number of images (14 million) than the Garbage Classification data set (around 15,500 image). This increases the speed of training for our model and the accuracy of our predictions.
 
 **Dataset**
 
